@@ -16,7 +16,6 @@ services:
         public: true
     cron.manager:
         class: "%cron.manager.class%"
-        arguments: ["@doctrine"]
         public: true
     cron.executor:
         class: "%cron.executor.class%"
